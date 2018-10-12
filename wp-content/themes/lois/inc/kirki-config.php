@@ -1,0 +1,112 @@
+<?php
+/**
+ * Kirki config
+ *
+ */
+?>
+<?php
+function lois_kirki_config()
+{
+    $strings = array(
+        'background-color' => esc_html__('Background Color', 'lois'),
+        'background-image' => esc_html__('Background Image', 'lois'),
+        'no-repeat' => esc_html__('No Repeat', 'lois'),
+        'repeat-all' => esc_html__('Repeat All', 'lois'),
+        'repeat-x' => esc_html__('Repeat Horizontally', 'lois'),
+        'repeat-y' => esc_html__('Repeat Vertically', 'lois'),
+        'inherit' => esc_html__('Inherit', 'lois'),
+        'background-repeat' => esc_html__('Background Repeat', 'lois'),
+        'cover' => esc_html__('Cover', 'lois'),
+        'contain' => esc_html__('Contain', 'lois'),
+        'background-size' => esc_html__('Background Size', 'lois'),
+        'fixed' => esc_html__('Fixed', 'lois'),
+        'scroll' => esc_html__('Scroll', 'lois'),
+        'background-attachment' => esc_html__('Background Attachment', 'lois'),
+        'left-top' => esc_html__('Left Top', 'lois'),
+        'left-center' => esc_html__('Left Center', 'lois'),
+        'left-bottom' => esc_html__('Left Bottom', 'lois'),
+        'right-top' => esc_html__('Right Top', 'lois'),
+        'right-center' => esc_html__('Right Center', 'lois'),
+        'right-bottom' => esc_html__('Right Bottom', 'lois'),
+        'center-top' => esc_html__('Center Top', 'lois'),
+        'center-center' => esc_html__('Center Center', 'lois'),
+        'center-bottom' => esc_html__('Center Bottom', 'lois'),
+        'background-position' => esc_html__('Background Position', 'lois'),
+        'background-opacity' => esc_html__('Background Opacity', 'lois'),
+        'on' => esc_html__('ON', 'lois'),
+        'off' => esc_html__('OFF', 'lois'),
+        'all' => esc_html__('All', 'lois'),
+        'cyrillic' => esc_html__('Cyrillic', 'lois'),
+        'cyrillic-ext' => esc_html__('Cyrillic Extended', 'lois'),
+        'devanagari' => esc_html__('Devanagari', 'lois'),
+        'greek' => esc_html__('Greek', 'lois'),
+        'greek-ext' => esc_html__('Greek Extended', 'lois'),
+        'khmer' => esc_html__('Khmer', 'lois'),
+        'latin' => esc_html__('Latin', 'lois'),
+        'latin-ext' => esc_html__('Latin Extended', 'lois'),
+        'vietnamese' => esc_html__('Vietnamese', 'lois'),
+        'hebrew' => esc_html__('Hebrew', 'lois'),
+        'arabic' => esc_html__('Arabic', 'lois'),
+        'bengali' => esc_html__('Bengali', 'lois'),
+        'gujarati' => esc_html__('Gujarati', 'lois'),
+        'tamil' => esc_html__('Tamil', 'lois'),
+        'telugu' => esc_html__('Telugu', 'lois'),
+        'thai' => esc_html__('Thai', 'lois'),
+        'serif' => _x('Serif', 'font style', 'lois'),
+        'sans-serif' => _x('Sans Serif', 'font style', 'lois'),
+        'monospace' => _x('Monospace', 'font style', 'lois'),
+        'font-family' => esc_html__('Font Family', 'lois'),
+        'font-size' => esc_html__('Font Size', 'lois'),
+        'font-weight' => esc_html__('Font Weight', 'lois'),
+        'line-height' => esc_html__('Line Height', 'lois'),
+        'font-style' => esc_html__('Font Style', 'lois'),
+        'letter-spacing' => esc_html__('Letter Spacing', 'lois'),
+        'top' => esc_html__('Top', 'lois'),
+        'bottom' => esc_html__('Bottom', 'lois'),
+        'left' => esc_html__('Left', 'lois'),
+        'right' => esc_html__('Right', 'lois'),
+        'color' => esc_html__('Color', 'lois'),
+        'add-image' => esc_html__('Add Image', 'lois'),
+        'change-image' => esc_html__('Change Image', 'lois'),
+        'remove' => esc_html__('Remove', 'lois'),
+        'no-image-selected' => esc_html__('No Image Selected', 'lois'),
+        'select-font-family' => esc_html__('Select a font-family', 'lois'),
+        'variant' => esc_html__('Variant', 'lois'),
+        'subsets' => esc_html__('Subset', 'lois'),
+        'size' => esc_html__('Size', 'lois'),
+        'height' => esc_html__('Height', 'lois'),
+        'spacing' => esc_html__('Spacing', 'lois'),
+        'ultra-light' => esc_html__('Ultra-Light 100', 'lois'),
+        'ultra-light-italic' => esc_html__('Ultra-Light 100 Italic', 'lois'),
+        'light' => esc_html__('Light 200', 'lois'),
+        'light-italic' => esc_html__('Light 200 Italic', 'lois'),
+        'book' => esc_html__('Book 300', 'lois'),
+        'book-italic' => esc_html__('Book 300 Italic', 'lois'),
+        'regular' => esc_html__('Normal 400', 'lois'),
+        'italic' => esc_html__('Normal 400 Italic', 'lois'),
+        'medium' => esc_html__('Medium 500', 'lois'),
+        'medium-italic' => esc_html__('Medium 500 Italic', 'lois'),
+        'semi-bold' => esc_html__('Semi-Bold 600', 'lois'),
+        'semi-bold-italic' => esc_html__('Semi-Bold 600 Italic', 'lois'),
+        'bold' => esc_html__('Bold 700', 'lois'),
+        'bold-italic' => esc_html__('Bold 700 Italic', 'lois'),
+        'extra-bold' => esc_html__('Extra-Bold 800', 'lois'),
+        'extra-bold-italic' => esc_html__('Extra-Bold 800 Italic', 'lois'),
+        'ultra-bold' => esc_html__('Ultra-Bold 900', 'lois'),
+        'ultra-bold-italic' => esc_html__('Ultra-Bold 900 Italic', 'lois'),
+        'invalid-value' => esc_html__('Invalid Value', 'lois'),
+
+    );
+
+    $args = array(
+        //'logo_image'     => get_template_directory_uri() . '/customize/images/logo.jpg',
+        'url_path' => get_template_directory_uri() . '/inc/kirki/',
+        'textdomain' => 'lois',
+        'i18n' => $strings,
+        'disable_loader' => true
+    );
+    return $args;
+}
+
+add_filter('kirki/config', 'lois_kirki_config');
+?>
